@@ -12,4 +12,4 @@ EXPOSE 3000
 COPY docker-entrypoint.sh .
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
-CMD ["/usr/local/bin/couchdb-howler --couchdb_url='https://newton:24230112@api.newt.to'"]
+CMD ["/usr/local/bin/couchdb-howler --couchdb_url='https://newton:24230112@api.newt.to' --port --port 3000"]
